@@ -5241,10 +5241,10 @@ enum power_supply_type type)
 printk("sontn " + chip->typec_psy + " \n");
 printk("sontn " + type + " \n");
 printk("sontn " + typec_current_ma + " \n");
-printk("sontn " + type == POWER_SUPPLY_TYPE_USB + " 11 \n")
-printk("sontn " + type == POWER_SUPPLY_TYPE_USB_CDP + " 22 \n")
-printk("sontn " + type == POWER_SUPPLY_TYPE_USB_HVDCP  " 33 \n")
-printk("sontn " + type == POWER_SUPPLY_TYPE_USB_HVDCP_3 + " 44 \n")
+printk("sontn " + type == POWER_SUPPLY_TYPE_USB + " 11 \n");
+printk("sontn " + type == POWER_SUPPLY_TYPE_USB_CDP + " 22 \n");
+printk("sontn " + type == POWER_SUPPLY_TYPE_USB_HVDCP  " 33 \n");
+printk("sontn " + type == POWER_SUPPLY_TYPE_USB_HVDCP_3 + " 44 \n");
 
 	if (chip->typec_psy && (type != POWER_SUPPLY_TYPE_USB) && (chip->typec_current_ma != 500))
 		current_limit_ma = chip->typec_current_ma;
